@@ -10,6 +10,7 @@ from .. import db,photos
 def index():
     blog = Blog.query.all()
     title = "Welcome to Blogsite"
+    uname = current_user
     # Getting the quotes
     quotes = get_quotes()
     print(quotes)
@@ -21,7 +22,7 @@ def index():
         db.session.add(subscription)
         db.session.commit()
         return render_template('index.html',title = title,blog = blog,quotes = quotes)
-    return render_template('index.html',title = title,blog = blog,quotes = quotes)
+    return render_template('index.html',title = title,blog = blog,quotes = quotes, uname = uname)
 
 @main.route('/new/blog/', methods=['GET','POST'])
 @login_required
