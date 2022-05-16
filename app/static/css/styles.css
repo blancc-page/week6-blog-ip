@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fredericka+the+Great&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #FAF5E4; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding: 8% 0 !important;
+}
+
+.navbar{
+    background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% )!important;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.nav-link.brand{
+    position: relative;
+    top: 100px;
+    left: 900%
+}
+
+h1.title{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+    cursor: pointer;
+    text-shadow: 5px 5px 25px rgba(0, 0, 0, 0.6);
+    transition: all ease 0.5s;
+}
+
+h1.title:hover{
+    text-shadow: 5px 5px 25px rgba(0, 0, 0, 2);
+}
+
+h1.title a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    text-align: center;
+    background-image: linear-gradient( 68.4deg,  rgba(99,251,215,0.2) -0.4%, rgba(5,222,250,0.2) 100.2% );
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 30px;;
+    padding: 0 33%;
+}
+
+article {
+	column-width: 20em;
+	column-gap: 2.5em;
+}
+
+section {
+	display: inline-block;
+	margin:  0.7em;
+	padding:  2rem 3rem;
+	width:  100%; 
+	border: none;
+    transition: all ease 0.5s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0) ;
+}
+
+p {
+	text-align: center;
+	margin:  1rem 0; 
+}
+section{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3) ;
+}
+.quote{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 700;
+    position: fixed;
+    background-color: #2F8F9DB3;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 1%;
+    width: 100vw;
+    font-size: 18px;
+}
+
+.quote-text{
+    margin: 0;
+}
+
+.quote-author{
+    margin: 0;
+}
