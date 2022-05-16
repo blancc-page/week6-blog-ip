@@ -20,7 +20,7 @@
               </div>
           
               <div class="blog-controls">
-                  {%if current_user.is_authenticated%}
+                  {%if current_user.username == "Moses" %}
                   <a href="{{url_for('main.new_comment',blog_id=item.id)}}">
                       <button class="btn btn-sm">
                       <i class="fa fa-comments"></i>
