@@ -2,13 +2,13 @@
 
 > A personal blogging website where you can create and share your opinions and other users can read and comment on them. Additionally, add a feature that displays random quotes to inspire your users. 
 
-## :hammer: Built With
-
-- Python
-
 ## :key: Admin account
 - email: mosesmuta22@gmail.com
 - pass: m
+
+## :hammer: Built With
+
+- Python
 
 ### :computer: Setup
 To get a local copy up and running follow these simple example steps.
