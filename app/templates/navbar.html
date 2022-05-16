@@ -4,9 +4,6 @@
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
           {%if current_user.is_authenticated%}
-            <li class="nav-item">
-                <a class="nav-link mr-5" href="/new/blog/">Add</a>
-            </li>
         </ul><i class=""></i>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -19,6 +16,10 @@
         </li>
       </ul>
     </div>
+    {% elif current_user.username == "Moses" %}
+    <li class="nav-item">
+      <a class="nav-link mr-5" href="/new/blog/">Add</a>
+  </li>
     {% else %}
     <li class="nav-item">
       <a class="nav-link" href="{{url_for('auth.login')}}">Login</a>
