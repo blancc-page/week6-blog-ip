@@ -4,7 +4,7 @@ from flask import config
 
 class Config:
     SECRET_KEY = 'SECRET_KEY'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:dclxvi@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     # email configurations
