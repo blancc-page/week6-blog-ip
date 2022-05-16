@@ -6,9 +6,9 @@
 
 - Python
 
-## :trollface: Admin account
-email: mosesmuta22@gmail.com
-pass: m
+## :key: Admin account
+- email: mosesmuta22@gmail.com
+- pass: m
 
 ### :computer: Setup
 To get a local copy up and running follow these simple example steps.
