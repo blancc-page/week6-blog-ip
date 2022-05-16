@@ -1,0 +1,13 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="text-align: center; align-items:center;">
+    <h1 class="title">
+        <a href="/">Blog Site</a> 
+    </h1>
+
+        {{wtf.quick_form(form,button_map={'submit':'info'})}}
+
+    
+</div>
+{% endblock %}
