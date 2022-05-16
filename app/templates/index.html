@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import 'macros.html' as macro %}
+{% block content %}
+   <div class="container" id="cov">
+           <div class="blog">
+            <h1 class="title">
+                <a href="/">Blog Site</a> 
+            </h1>
+            <article>
+               {{ macro.display(blog) }}
+             </article>
+           </div> 
+           <div class="quote">
+            <p class="quote-text">"{{quotes.quote}}"</p>
+            <p class="quote-author">By: ~{{quotes.author}}~</p>
+   </div> 
+       </div>
+{% endblock %}

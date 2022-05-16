@@ -1,0 +1,32 @@
+{% macro display(blog) %}
+    {% if blog%}
+    {% for item in blog %}
+    <section>
+    <h3>{{item.title}}</h3>
+    <p>
+    <div class="blog-text">
+        <p>Post: {{item.blog_content}}</p>
+        <p class="text-muted"> Posted by: {{item.user.username}} 
+            <br>
+        On: {{item.posted_on}}</p>
+    </div>
+    <div class="blog-controls">
+        <a href="{{url_for('main.new_comment',blog_id=item.id)}}">
+            <button class="btn btn-sm">
+            <i class="fa fa-comments"></i>
+            </button>
+        </a>
+        <a href="{{url_for('main.edit_blog',blog_id = item.id)}}">
+            <button class="btn btn-sm"><i class="fa fa-edit"></i></button>
+        </a>
+        <a href="{{url_for('main.delete_blog',site_id = item.id)}}">
+            <button class="btn btn-sm"><i class="fa fa-trash"></i></button>
+        </a>
+    </div>
+</p>
+</section>
+        {% endfor %}
+        {% endif%}
+
+{% endmacro %}
+
