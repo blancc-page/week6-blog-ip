@@ -4,7 +4,7 @@ distlib==0.3.4
 dnspython==2.2.1
 dominate==2.6.0
 filelock==3.6.0
-Flask==1.1.2
+Flask==1.1.4
 Flask-Bootstrap==3.3.7.1
 Flask-Script==2.0.6
 Flask-SQLAlchemy==2.5.1
